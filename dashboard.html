@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/frameworks.css">
+    <link rel="stylesheet" href="css/side&nav.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- start side -->
+    <div class="side p-10">
+        <h2>
+            magri
+        </h2>
+        <ul>
+            <li><a href="dashboard.html" class="title br-5 in"><i
+                        class="fa-regular fa-chart-bar fa-fw"></i><span>dashboard</span></a></li>
+            <li><a href="settings.html" class="title br-5"><i
+                        class="fa-solid fa-gear fa-fw"></i><span>settings</span></a></li>
+            <li><a href="profile.html" class="title br-5"><i
+                        class="fa-regular fa-user fa-fw"></i><span>profile</span></a></li>
+            <li><a href="projects.html" class="title br-5"><i
+                        class="fa-solid fa-diagram-project fa-fw"></i><span>projects</span></a></li>
+            <li><a href="courses.html" class="title br-5"><i
+                        class="fa-solid fa-graduation-cap fa-fw"></i><span>courses</span></a></li>
+            <li><a href="friends.html" class="title br-5"><i
+                        class="fa-regular fa-circle-user fa-fw"></i><span>friends</span></a></li>
+            <li><a href="files.html" class="title br-5"><i class="fa-regular fa-file fa-fw"></i><span>files</span></a>
+            </li>
+            <li><a href="plans.html" class="title br-5"><i
+                        class="fa-regular fa-credit-card fa-fw"></i><span>plans</span></a></li>
+        </ul>
+    </div>
+    <!-- end side -->
+    <div class="content">
+        <div class="head">
+            <form action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Type a Keyword" class="br-5" type="search">
+            </form>
+            <div class="noti">
+                <i class="fa-regular fa-bell fa-lg"></i>
+                <img src="imgs/avatar.png" alt="">
+            </div>
+        </div>
+        <div class="containor p-20">
+            <h1 class="main-head">dashboard</h1>
+            <div class="grid-3">
+                <article class="welcome br-10">
+                    <div class="gray">
+                        <div class="text">
+                            <h2>welcome</h2>
+                            <p>magri</p>
+                        </div>
+                        <img src="imgs/welcome.png" alt="">
+                    </div>
+                    <img src="imgs/avatar.png" alt="">
+                    <div class="info">
+                        <div class="name">
+                            <p>magri abderrouf</p>
+                            <p>developer</p>
+                        </div>
+                        <div class="projects">
+                            <p>80</p>
+                            <p>projects</p>
+                        </div>
+                        <div class="money">
+                            <p>$8500</p>
+                            <p>earned</p>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <p>profile</p>
+                    </div>
+                </article>
+                <article class="draft br-10 p-20">
+                    <h2>quick draft</h2>
+                    <p>write a draft for your ideas</p>
+                    <form action="">
+                        <input type="text" name="title" id="" placeholder="title">
+                        <textarea name="thought" id="" placeholder="your thought"></textarea>
+                    </form>
+                    <div class="save">
+                        <p>save</p>
+                    </div>
+                </article>
+                <article class="targets br-10 p-20">
+                    <h2>yearly targets</h2>
+                    <p>targets of the year</p>
+                    <div class="money">
+                        <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+                        <div class="text">
+                            <p>money</p>
+                            <p>$20.000</p>
+                            <div><span></span></div>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <i class="fa-solid fa-code fa-lg c-orange"></i>
+                        <div class="text">
+                            <p>projects</p>
+                            <p>24</p>
+                            <div><span></span></div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <i class="fa-solid fa-user fa-lg c-green"></i>
+                        <div class="text">
+                            <p>team</p>
+                            <p>12</p>
+                            <div><span></span></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="statistics br-10 p-20">
+                    <h2>tickets statictics</h2>
+                    <p>everything about support tickets</p>
+                    <div class="tickets">
+                        <div class="total br-10">
+                            <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+                            <p>2500</p>
+                            <p>total</p>
+                        </div>
+                        <div class="pending br-10">
+                            <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                            <p>500</p>
+                            <p>pending</p>
+                        </div>
+                        <div class="closed br-10">
+                            <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                            <p>1900</p>
+                            <p>closed</p>
+                        </div>
+                        <div class="deleted br-10">
+                            <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                            <p>100</p>
+                            <p>deleted</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="news br-10 p-20">
+                    <h2>latest news</h2>
+                    <div>
+                        <div>
+                            <img src="imgs/news-01.png" alt="">
+                            <div class="text">
+                                <div class="con">
+                                    <h3>created SASS section</h3>
+                                    <p>new SASS examples & tutorials</p>
+                                </div>
+                                <p>3 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="imgs/news-02.png" alt="">
+                            <div class="text">
+                                <div class="con">
+                                    <h3>changed the design</h3>
+                                    <p>a brand new website design</p>
+                                </div>
+                                <p>5 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="imgs/news-03.png" alt="">
+                            <div class="text">
+                                <div class="con">
+                                    <h3>team incersed</h3>
+                                    <p>3 developers joinded the team</p>
+                                </div>
+                                <p>7 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="imgs/news-04.png" alt="">
+                            <div class="text">
+                                <div class="con">
+                                    <h3>added payment gateway</h3>
+                                    <p>many new payment gateways added</p>
+                                </div>
+                                <p>9 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="tasks br-10 p-20">
+                    <h2>latest tasks</h2>
+                    <div class="task">
+                        <div class="text">
+                            <h3>record one new video</h3>
+                            <p>record python create exe progect</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task">
+                        <div class="text">
+                            <h3>write article</h3>
+                            <p>write low level vs heigh lever languages</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task">
+                        <div class="text">
+                            <h3>finish project</h3>
+                            <p>publish acadeny programming project</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task">
+                        <div class="text">
+                            <h3><del>attend the meeting</del></h3>
+                            <p><del>attend the project business analysis meeting</del></p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task">
+                        <div class="text">
+                            <h3>finish lesson</h3>
+                            <p>finish teaching flex box</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                </article>
+                <article class="items br-10 p-20">
+                    <h2>latest tasks</h2>
+                    <div class="item">
+                        <p>keyword</p>
+                        <p>search count</p>
+                    </div>
+                    <div>
+                        <p>programming</p>
+                        <p>220</p>
+                    </div>
+                    <div>
+                        <p>JavaScript</p>
+                        <p>180</p>
+                    </div>
+                    <div>
+                        <p>PHP</p>
+                        <p>160</p>
+                    </div>
+                    <div>
+                        <p>code</p>
+                        <p>145</p>
+                    </div>
+                    <div>
+                        <p>design</p>
+                        <p>110</p>
+                    </div>
+                    <div>
+                        <p>logic</p>
+                        <p>95</p>
+                    </div>
+                </article>
+                <article class="uploads br-10 p-20">
+                    <h2>latest uploads</h2>
+                    <div class="file">
+                        <div class="con">
+                            <img src="imgs/pdf.svg" alt="">
+                            <div class="text">
+                                <p>my-file.pdf</p>
+                                <p>magri</p>
+                            </div>
+                        </div>
+                        <p>2.9mb</p>
+                    </div>
+                    <div class="file">
+                        <div class="con">
+                            <img src="imgs/avi.svg" alt="">
+                            <div class="text">
+                                <p>my-video-File.avi</p>
+                                <p>admin</p>
+                            </div>
+                        </div>
+                        <p>2.9mb</p>
+                    </div>
+                    <div class="file">
+                        <div class="con">
+                            <img src="imgs/psd.svg" alt="">
+                            <div class="text">
+                                <p>my-Psd-File.pdf</p>
+                                <p>abderrouf</p>
+                            </div>
+                        </div>
+                        <p>2.9mb</p>
+                    </div>
+                    <div class="file">
+                        <div class="con">
+                            <img src="imgs/zip.svg" alt="">
+                            <div class="text">
+                                <p>my-Zip-File.pdf</p>
+                                <p>user</p>
+                            </div>
+                        </div>
+                        <p>2.9mb</p>
+                    </div>
+                    <div class="file">
+                        <div class="con">
+                            <img src="imgs/dll.svg" alt="">
+                            <div class="text">
+                                <p>my-DLL-File.pdf</p>
+                                <p>admin</p>
+                            </div>
+                        </div>
+                        <p>2.9mb</p>
+                    </div>
+                    <div class="file">
+                        <div class="con">
+                            <img src="imgs/eps.svg" alt="">
+                            <div class="text">
+                                <p>my-Eps-File.pdf</p>
+                                <p>designer</p>
+                            </div>
+                        </div>
+                        <p>2.9mb</p>
+                    </div>
+                </article>
+                <article class="last-pr br-10 p-20">
+                    <h2>last project progress</h2>
+                    <div class="list">
+                        <p>got the project</p>
+                        <p>started the project</p>
+                        <p>the project about to finish</p>
+                        <p>test the project</p>
+                        <p>finish the project & get money</p>
+                    </div>
+                </article>
+                <article class="reminders br-10 p-20">
+                    <h2>reminders</h2>
+                    <div>
+                        <div class="reminder">
+                            <p>check ny tasks list</p>
+                            <p>28/09/2025 - 12:00am</p>
+                        </div>
+                        <div class="reminder">
+                            <p>check ny projects</p>
+                            <p>28/09/2025 - 12:00am</p>
+                        </div>
+                        <div class="reminder">
+                            <p>call all my clients</p>
+                            <p>28/09/2025 - 12:00am</p>
+                        </div>
+                        <div class="reminder">
+                            <p>finish the developement workshop</p>
+                            <p>28/09/2025 - 12:00am</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="post br-10 p-20">
+                    <h2>latest post</h2>
+                    <div class="profile">
+                        <img src="imgs/avatar.png" alt="">
+                        <div class="text">
+                            <p>magri abderrouf</p>
+                            <p>about 3 hours ago</p>
+                        </div>
+                    </div>
+                    <p>You can fool all of the people some of the time, and some of the people all of the time, but you
+                        can't fool all of the people all of the time.</p>
+                    <div class="likes">
+                        <p><i class="fa-regular fa-heart"></i> 1.8K</p>
+                        <p><i class="fa-regular fa-comments"></i> 500</p>
+                </article>
+                <article class="social br-10 p-20">
+                    <h2>social media stats</h2>
+                    <div class="twitter">
+                        <i class="fa-brands fa-twitter fa-2x c-white h-full center-flex"></i>
+                        <div class="text">
+                            <p>90K followers</p>
+                            <p>follow</p>
+                        </div>
+                    </div>
+                    <div class="facebook">
+                        <i class="fa-brands fa-facebook-f fa-2x c-white h-full center-flex"></i>
+                        <div class="text">
+                            <p>2M like</p>
+                            <p>like</p>
+                        </div>
+                    </div>
+                    <div class="youtube">
+                        <i class="fa-brands fa-youtube fa-2x c-white h-full center-flex"></i>
+                        <div class="text">
+                            <p>1M Subs followers</p>
+                            <p>subscribe</p>
+                        </div>
+                    </div>
+                    <div class="linkedin">
+                        <i class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"></i>
+                        <div class="text">
+                            <p>70K followers</p>
+                            <p>follow</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <article class="table p-20 br-10">
+                <h2>projects</h2>
+                <div class="table-containor">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>name</td>
+                                <td>finish sate</td>
+                                <td>client</td>
+                                <td>price</td>
+                                <td>team</td>
+                                <td>status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ministry widipedia</td>
+                                <td>10 may 2025</td>
+                                <td>ministry</td>
+                                <td>$5300</td>
+                                <td>
+                                    <img src="imgs/team-01.png" alt="">
+                                    <img src="imgs/team-02.png" alt="">
+                                    <img src="imgs/team-03.png" alt="">
+                                    <img src="imgs/team-04.png" alt="">
+                                </td>
+                                <td>
+                                    <p>pending</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>magri shop</td>
+                                <td>12 oct 2024</td>
+                                <td>magri company</td>
+                                <td>$1500</td>
+                                <td>
+                                    <img src="imgs/team-01.png" alt="">
+                                    <img src="imgs/team-02.png" alt="">
+                                    <img src="imgs/team-03.png" alt="">
+                                </td>
+                                <td>
+                                    <p>in progress</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>bouba app</td>
+                                <td>25 sep 2024</td>
+                                <td>bouba</td>
+                                <td>$800</td>
+                                <td>
+                                    <img src="imgs/team-01.png" alt="">
+                                    <img src="imgs/team-02.png" alt="">
+                                </td>
+                                <td>
+                                    <p>completed</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>mahmoud website</td>
+                                <td>22 may 2024</td>
+                                <td>mahmoud</td>
+                                <td>$600</td>
+                                <td>
+                                    <img src="imgs/team-01.png" alt="">
+                                    <img src="imgs/team-02.png" alt="">
+                                </td>
+                                <td>
+                                    <p>completed</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>sayed website</td>
+                                <td>24 may 2024</td>
+                                <td>sayed</td>
+                                <td>$300</td>
+                                <td>
+                                    <img src="imgs/team-01.png" alt="">
+                                    <img src="imgs/team-03.png" alt="">
+                                </td>
+                                <td>
+                                    <p>rejected</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>arena application</td>
+                                <td>01 mar 2024</td>
+                                <td>arena company</td>
+                                <td>$2600</td>
+                                <td>
+                                    <img src="imgs/team-01.png" alt="">
+                                    <img src="imgs/team-02.png" alt="">
+                                    <img src="imgs/team-03.png" alt="">
+                                    <img src="imgs/team-04.png" alt="">
+                                </td>
+                                <td>
+                                    <p>completed</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>

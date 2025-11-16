@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/frameworks.css">
+    <link rel="stylesheet" href="css/side&nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+
+<body>
+    <!-- start side -->
+    <div class="side p-10">
+        <h2>
+            magri
+        </h2>
+        <ul>
+            <li><a href="dashboard.html" class="title br-5 "><i
+                        class="fa-regular fa-chart-bar fa-fw"></i><span>dashboard</span></a></li>
+            <li><a href="settings.html" class="title br-5 in"><i
+                        class="fa-solid fa-gear fa-fw"></i><span>settings</span></a></li>
+            <li><a href="profile.html" class="title br-5"><i
+                        class="fa-regular fa-user fa-fw"></i><span>profile</span></a></li>
+            <li><a href="projects.html" class="title br-5"><i
+                        class="fa-solid fa-diagram-project fa-fw"></i><span>projects</span></a></li>
+            <li><a href="courses.html" class="title br-5"><i
+                        class="fa-solid fa-graduation-cap fa-fw"></i><span>courses</span></a></li>
+            <li><a href="friends.html" class="title br-5"><i
+                        class="fa-regular fa-circle-user fa-fw"></i><span>friends</span></a></li>
+            <li><a href="files.html" class="title br-5"><i class="fa-regular fa-file fa-fw"></i><span>files</span></a>
+            </li>
+            <li><a href="plans.html" class="title br-5"><i
+                        class="fa-regular fa-credit-card fa-fw"></i><span>plans</span></a></li>
+        </ul>
+    </div>
+    <!-- end side -->
+    <div class="content">
+        <div class="head">
+            <form action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Type a Keyword" class="br-5" type="search">
+            </form>
+            <div class="noti">
+                <i class="fa-regular fa-bell fa-lg"></i>
+                <img src="imgs/avatar.png" alt="">
+            </div>
+        </div>
+        <!-- end head -->
+        <div class="containor p-20">
+            <h1 class="main-head">settings</h1>
+            <div class="grid-3">
+                <article class="control p-20 br-10">
+
+                    <div class="text">
+                        <h3>site control</h3>
+                        <p>control the website if there is maintenanece</p>
+                    </div>
+                    <div class="checking">
+                        <div class="web-co">
+                            <h5>website control</h5>
+                            <p>open/close website and type the reason</p>
+                        </div>
+                        <div>
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="slider">
+                                    <span class="icon"></span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <form action="">
+                        <textarea name="" id="" placeholder="close message content" class="br-5 p-10"></textarea>
+                    </form>
+                </article>
+                <article class="general p-20 br-10">
+                    <div class="text">
+                        <h3>general info</h3>
+                        <p>general information abourt your account</p>
+                    </div>
+                    <form action="">
+                        <div class="fr-name">
+                            <label for="fr-name">first name</label>
+                            <input type="text" id="fr-name">
+                        </div>
+                        <div class="la-name">
+                            <label for="la-name">last name</label>
+                            <input type="text" id="la-name">
+                        </div>
+                        <div class="email">
+                            <label for="email">email</label>
+                            <input placeholder="magri@gmail.com" readonly type="text" id="email">
+                            <p>change</p>
+                        </div>
+                    </form>
+                </article>
+                <article class="security p-20 br-10">
+                    <div class="text">
+                        <h3>security info</h3>
+                        <p>security information abourt your account</p>
+                    </div>
+                    <div class="set">
+                        <div>
+                            <h5>password</h5>
+                            <p>last change on 25/10/2025</p>
+                        </div>
+                        <p class="change">change</p>
+                    </div>
+                    <div class="set">
+                        <div>
+                            <h5>two-factor autentication</h5>
+                            <p>enable/disable the feature</p>
+                        </div>
+                        <div>
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="slider">
+                                    <span class="icon"></span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="set">
+                        <div>
+                            <h5>devices</h5>
+                            <p>check the login devices list</p>
+                        </div>
+                        <p>devices</p>
+                    </div>
+                </article>
+                <article class="social p-20 br-10">
+                    <div class="text">
+                        <h3>socila info</h3>
+                        <p>social media information</p>
+                    </div>
+                    <form action="">
+                        <div class="br-5">
+                            <i class="fa-brands fa-twitter center-flex c-grey"></i>
+                            <input type="text" placeholder="twitter username">
+                        </div>
+                        <div class="br-5">
+                            <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+                            <input type="text" placeholder="twitter username">
+                        </div>
+                        <div class="br-5">
+                            <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+                            <input type="text" placeholder="twitter username">
+                        </div>
+                        <div class="br-5">
+                            <i class="fa-brands fa-youtube center-flex c-grey"></i> <input type="text"
+                                placeholder="twitter username">
+                        </div>
+                    </form>
+                </article>
+                <article class="widgets p-20 br-10">
+                    <div class="text">
+                        <h3>widgetx control</h3>
+                        <p>show/hide widgets</p>
+                    </div>
+                    <form action="">
+                        <div>
+                            <input type="checkbox" id="quick" checked>
+                            <label for="quick">quick draft</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="yearly" checked>
+                            <label for="yearly">yearly targets</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="statistics" checked>
+                            <label for="statistics">tickets statistics</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="news" checked>
+                            <label for="news">latest news</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tasks">
+                            <label for="tasks">latest tasks</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="top" checked>
+                            <label for="top">top search items</label>
+                        </div>
+                    </form>
+                </article>
+                <article class="backup p-20 br-10">
+                    <div class="text">
+                        <h3>backup manager</h3>
+                        <p>control buckup time and location</p>
+                    </div>
+                    <form action="">
+                        <div>
+                            <input type="radio" id="daily" name="frequency" value="daily" checked>
+                            <label for="daily">daily</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="weekly" name="frequency" value="weekly">
+                            <label for="weekly">weekly</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="monthly" name="frequency" value="monthly">
+                            <label for="monthly">monthly</label>
+                        </div>
+                    </form>
+                    <div class="choise">
+                        <div>
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <p>megaman</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <p>zero</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <p>sigma</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

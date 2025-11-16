@@ -1,0 +1,154 @@
+:root {
+    --p-color: rgb(125, 125, 125);
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --border: solid rgb(221, 221, 221) 1px;
+    --main-transition: 0.3s;
+}
+
+.content .containor .grid-3 article {
+    background-color: white;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.content .containor .grid-3 article::after {
+    content: "15/10/2021";
+    top: 10px;
+    right: 10px;
+    font-family: "Open Sans", sans-serif;
+    color: var(--p-color);
+    position: absolute;
+    font-size: 14px;
+}
+
+.content .containor .grid-3 article .text h4 {
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 0 0 10px;
+}
+
+.content .containor .grid-3 article .text p {
+    color: rgb(143, 143, 143);
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 0 0 10px;
+    font-size: 14px;
+}
+
+.content .containor .grid-3 article .avatars {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.content .containor .grid-3 article .avatars img {
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    border: solid white 2px;
+    cursor: pointer;
+
+}
+
+.content .containor .grid-3 article .avatars img:hover {
+    z-index: 2;
+}
+
+.content .containor .grid-3 article .avatars img:nth-child(2) {
+    left: -15px;
+}
+
+.content .containor .grid-3 article .avatars img:nth-child(3) {
+    left: -30px;
+}
+
+.content .containor .grid-3 article .avatars img:nth-child(4) {
+    left: -45px;
+}
+
+.content .containor .grid-3 article .avatars img:nth-child(5) {
+    left: -60px;
+}
+
+.content .containor .grid-3 article .skills {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.content .containor .grid-3 article .skills ul li {
+    display: inline-block;
+    background-color: #dbdbdb;
+    padding: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+
+.content .containor .grid-3 article .price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.content .containor .grid-3 article .price p {
+    color: #acacac;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.content .containor .grid-3 article .price>div {
+    width: 250px;
+    height: 7px;
+    background-color: #e2e2e2;
+    position: relative;
+}
+
+.content .containor .grid-3 article:nth-child(1) .price>div>span,
+.content .containor .grid-3 article:nth-child(6) .price>div>span {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--red-color);
+    z-index: 10;
+
+}
+
+.content .containor .grid-3 article:nth-last-child(-n + 3) .price>div>span,
+.content .containor .grid-3 article:nth-child(4) .price>div>span,
+.content .containor .grid-3 article:nth-child(2) .price>div>span,
+.content .containor .grid-3 article:nth-child(5) .price>div>span {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--green-color);
+    z-index: 10;
+}
+
+.content .containor .grid-3 article:nth-child(3) .price>div>span {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--blue-color);
+    z-index: 10;
+}

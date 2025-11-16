@@ -1,0 +1,82 @@
+:root {
+    --p-color: rgb(125, 125, 125);
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --border: solid rgb(221, 221, 221) 1px;
+    --main-transition: 0.3s;
+}
+
+article {
+    background-color: white;
+    position: relative;
+}
+
+article .imgs img:first-child {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+article .imgs img:last-child {
+    position: absolute;
+    width: 60px;
+    border-radius: 50%;
+    border: solid white 2px;
+    top: 15px;
+    left: 15px;
+}
+
+article .text {
+    padding-bottom: 40px;
+    border-bottom: var(--border);
+    position: relative;
+}
+
+article .text::after {
+    content: " course info";
+    position: absolute;
+    text-transform: capitalize;
+    color: white;
+    padding: 5px 10px;
+    width: fit-content;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--blue-color);
+    cursor: pointer;
+    z-index: 2;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+article .text h3 {
+    text-transform: capitalize;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+article .text p {
+    text-transform: capitalize;
+    padding: 0px 10px;
+    font-size: 14px;
+    color: var(--p-color);
+    line-height: 1.5;
+
+}
+
+article .members {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--p-color);
+}
+
+article .members i {
+    padding-right: 5px;
+    font-size: 13px;
+}

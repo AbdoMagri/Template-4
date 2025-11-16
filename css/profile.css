@@ -1,0 +1,323 @@
+:root {
+    --p-color: rgb(125, 125, 125);
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --border: solid rgb(221, 221, 221) 1px;
+    --main-transition: 0.3s;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+}
+
+/* Hide the default checkbox */
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* check framwork */
+/* Background (the track) */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px;
+}
+
+/* The circle (and icon inside it) */
+.slider .icon {
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 13px;
+    transition: transform 0.3s, color 0.3s, background-color 0.3s;
+}
+
+/* When checked */
+.toggle input:checked+.slider {
+    background-color: #007bff;
+    /* blue background */
+}
+
+.toggle input:checked+.slider .icon {
+    transform: translateX(60px);
+    /* move to right */
+    color: #007bff;
+    /* blue check color */
+    content: "✔";
+}
+
+/* Change icon when checked */
+.toggle input:checked+.slider .icon::before {
+    content: "✔";
+}
+
+.toggle input:not(:checked)+.slider .icon::before {
+    content: "✖";
+}
+
+/* end check */
+.profile-containor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    background-color: white;
+}
+
+article:first-of-type {
+    display: flex;
+    flex: 1;
+    flex-basis: 100%;
+}
+
+@media (max-width: 767px) {
+
+    article:first-of-type,
+    .profile-containor {
+        flex-direction: column;
+    }
+}
+
+.one .level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .one .level {
+        min-width: 220px;
+        border-right: var(--border);
+    }
+}
+
+.one .level img {
+    width: 120px;
+}
+
+.one .level>h3 {
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.one .level p {
+    text-transform: capitalize;
+    color: var(--p-color);
+
+}
+
+.one .level .range {
+    width: 120px;
+    height: 5px;
+    background-color: rgb(213, 213, 213);
+    border-radius: 50px;
+    position: relative;
+}
+
+.one .level .range span {
+    background-color: var(--blue-color);
+    width: 70%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: 2;
+    position: absolute;
+}
+
+.one .level .stars {
+    color: var(--orange-color);
+    font-size: 13px;
+}
+
+.one .level p:last-child {
+    font-size: 13px;
+}
+
+.one .info {
+    flex: 1;
+}
+
+.one .info>div {
+    padding: 20px;
+}
+
+.one .info>div:not(:last-child) {
+    border-bottom: var(--border);
+}
+
+.one .info>div p {
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+@media (max-width: 450px) {
+    .one .info>div p {
+        font-size: 13px;
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+.one .info>div>p {
+    margin-bottom: 5px;
+}
+
+.one .info>div p span,
+.one .info>div>p {
+    color: var(--p-color);
+}
+
+.one .info>div>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    row-gap: 5px;
+}
+
+@media (max-width: 450px) {
+    .one .info>div>div {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+.one .info>div>div p {
+    flex-basis: 30%;
+}
+
+@media (max-width: 767px) {
+    .one .info>div p {
+        text-align: center;
+    }
+
+    .one label {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* start skills */
+.skills {
+    flex-basis: 30%;
+}
+
+article h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+article:nth-child(n + 2)>p {
+    text-transform: capitalize;
+    color: var(--p-color);
+    padding: 10px 0;
+}
+
+.skills ul {
+    padding: 10px 0;
+}
+
+.skills ul li:not(:last-child) {
+    border-bottom: var(--border);
+}
+
+.skills ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3px;
+    padding: 10px;
+}
+
+.skills ul li p {
+    background-color: #e9e9e9;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* end skills */
+/* start activities */
+.activities {
+    flex: 1;
+}
+
+.activities .info>div {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+@media (max-width: 767px) {
+    .activities .info>div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.activities .info>div .img-containor {
+    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities .info>div img {
+    width: 70px;
+}
+
+.activities .info>div .text,
+.activities .info>div .time {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.activities .info>div .text {
+    flex-basis: calc(100% - 170px);
+}
+
+.activities .info>div .time {
+    flex-basis: fit-content;
+}
+
+.activities .info>div p:nth-child(2) {
+    color: var(--p-color);
+}
+
+@media (max-width: 767px) {
+    .activities .info>div p {
+        text-align: center;
+    }
+}
+
+/* end activities */

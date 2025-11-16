@@ -1,0 +1,325 @@
+:root {
+    --p-color: rgb(125, 125, 125);
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
+article {
+    background-color: white;
+    min-height: 350px;
+
+}
+
+article .text h3 {
+    text-transform: capitalize;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+article .text p {
+    text-transform: capitalize;
+    color: var(--p-color);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+article h5 {
+    text-transform: capitalize;
+    font-size: 17px;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.control .checking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .control .checking {
+        flex-direction: column;
+    }
+
+    .control .checking h5,
+    .control .checking p {
+        text-align: center;
+    }
+
+    .control .checking .web-co {
+        margin-bottom: 10px;
+    }
+}
+
+.control .checking .web-co p {
+    color: var(--p-color);
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border-color: rgb(201, 201, 201);
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.general label {
+    display: block;
+    text-transform: capitalize;
+    color: var(--p-color);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.general form input {
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: solid var(--p-color) 1px;
+}
+
+.general form .email input {
+    width: calc(100% - 100px);
+    display: inline;
+    background-color: #dbdbdb;
+    cursor: not-allowed;
+}
+
+.general form .email p {
+    display: inline;
+    padding: 10px;
+    text-transform: capitalize;
+    color: var(--blue-alt-color);
+    cursor: pointer;
+}
+
+.security .set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.security .set:not(:last-child) {
+    border-bottom: solid 1px rgb(234, 234, 234);
+}
+
+.security .set>div p {
+    color: var(--p-color);
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.security .set:not(:last-child)>p {
+    color: white;
+    background-color: var(--blue-color);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.security .set:not(:last-child)>p:hover {
+    background-color: var(--blue-alt-color);
+}
+
+.security .set:last-child>p {
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    background-color: #dbdbdb;
+}
+
+.social .text {
+    padding-bottom: 10px;
+}
+
+.social form div {
+    background-color: #f1f1f1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border: #d9d9d9 solid 1px;
+}
+
+.social form div input {
+    border: none;
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-left: #d9d9d9 solid 1px;
+    width: 100%;
+}
+
+.social form div i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40px;
+    color: var(--grey-color);
+    transition: 0.3s;
+
+}
+
+.social form div:focus-within i {
+    color: black;
+}
+
+.widgets form div {
+    margin-bottom: 10px;
+}
+
+.widgets form div label,
+.backup form div label {
+    text-transform: capitalize;
+    padding-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.widgets form div input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px #ccc solid;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.widgets form div input:checked {
+    background-color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+.widgets form div input:checked::after {
+    content: "✓";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.backup form {
+    padding: 10px 0;
+    border-bottom: solid 1px rgb(201, 201, 201);
+}
+
+.backup form div {
+    margin-bottom: 10px;
+}
+
+.backup form div input {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 5px;
+}
+
+.backup .choise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-top: 20px;
+}
+
+.backup .choise div {
+    flex-basis: calc(100% / 3);
+    border: solid 2px #dcdcdc;
+    min-height: 80px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.backup .choise div:hover {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+.backup .choise div p {
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+
+/* check framwork */
+/* Background (the track) */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px;
+}
+
+/* The circle (and icon inside it) */
+.slider .icon {
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 14px;
+    transition: transform 0.3s, color 0.3s, background-color 0.3s;
+}
+
+/* When checked */
+.toggle input:checked+.slider {
+    background-color: #007bff;
+    /* blue background */
+}
+
+.toggle input:checked+.slider .icon {
+    transform: translateX(30px);
+    /* move to right */
+    color: #007bff;
+    /* blue check color */
+    content: "✔";
+}
+
+/* Change icon when checked */
+.toggle input:checked+.slider .icon::before {
+    content: "✔";
+}
+
+.toggle input:not(:checked)+.slider .icon::before {
+    content: "✖";
+}
+
+/*end check framwork */

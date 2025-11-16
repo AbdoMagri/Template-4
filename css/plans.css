@@ -1,0 +1,124 @@
+:root {
+    --p-color: rgb(125, 125, 125);
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --border: solid rgb(221, 221, 221) 1px;
+    --main-transition: 0.3s;
+}
+
+article {
+    background-color: white;
+}
+
+article .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 150px;
+    margin: 6px;
+    border: solid white 3px;
+}
+
+.free .price {
+    background-color: var(--green-color);
+    outline: solid var(--green-color) 3px;
+}
+
+.basic .price {
+    background-color: var(--blue-color);
+    outline: solid var(--blue-color) 3px;
+}
+
+.premium .price {
+    background-color: var(--orange-color);
+    outline: solid var(--orange-color) 3px;
+}
+
+article .price h2 {
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: -1px;
+    font-size: 30px;
+}
+
+article .price p {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+article .price p::after {
+    content: "$";
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    left: -15px;
+    top: -10px;
+}
+
+article ul {
+    padding: 15px 0;
+}
+
+article ul>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: var(--border);
+
+}
+article ul>div li {
+    display: flex;
+}
+
+article ul>div>i {
+    color: #888;
+}
+
+article ul li::after {
+    content: "";
+}
+
+article ul li i.fa-check {
+    margin-right: 10px;
+    color: var(--green-color);
+}
+
+article ul li i.fa-xmark {
+    margin-right: 10px;
+    color: var(--red-color);
+}
+
+article:not(:last-child)>p {
+    text-transform: capitalize;
+    padding: 5px 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.free>p {
+    background-color: var(--green-color);
+}
+
+.basic>p {
+    background-color: var(--blue-color);
+}
+
+.premium>p {
+    color: var(--p-color);
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
